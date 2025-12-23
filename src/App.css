@@ -4,6 +4,12 @@
 }
 .app-heading{
     text-align:center;
-    color:#333;
+    color:#3B4953;
     margin-top:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.app-subheading{
+    text-align:center;
+    color:#5A7863;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
