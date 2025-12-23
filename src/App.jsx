@@ -4,6 +4,13 @@ import './App.css'
 
 function App() {
   
+  const [tasks, setTasks] = useState([
+    "Go for Gym",
+    "Complete React Project",
+    "Read a Book",
+    "Grocery Shopping",
+    "Plan Weekend Trip"
+  ])
 
   return (
     <div>
