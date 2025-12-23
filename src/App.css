@@ -3,6 +3,9 @@
     padding:0;
     background-color: #90AB8B;
 }
+.home-container{
+    text-align: center;
+}
 .app-heading{
     text-align:center;
     color:#3B4953;
@@ -18,3 +21,4 @@
     font-weight: bold;
     color: #3B4953;
 }
+

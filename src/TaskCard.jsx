@@ -1,10 +1,10 @@
 import React from 'react'
 import './TaskCard.css'
 
-function TaskCard() {
+function TaskCard({task}) {
   return (
     <div>
-      
+      {task}
     </div>
   )
 }

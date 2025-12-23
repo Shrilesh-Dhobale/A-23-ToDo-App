@@ -13,7 +13,7 @@ function App() {
   ])
 
   return (
-    <div>
+    <div className='home-container'>
       <h1 className="app-heading">To-Do Application</h1>
       <p className='app-subheading'>Manage your task efficiently with this simple ToDo App.
         <span className='highlighted-text'>No Stuff</span>, just pure productivity!
