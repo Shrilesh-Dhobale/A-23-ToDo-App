@@ -1,6 +1,7 @@
 .body{
     margin:0;
     padding:0;
+    background-color: #90AB8B;
 }
 .app-heading{
     text-align:center;
@@ -12,4 +13,8 @@
     text-align:center;
     color:#5A7863;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.highlighted-text{
+    font-weight: bold;
+    color: #3B4953;
 }
