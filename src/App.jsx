@@ -18,6 +18,11 @@ function App() {
       <p className='app-subheading'>Manage your task efficiently with this simple ToDo App.
         <span className='highlighted-text'>No Stuff</span>, just pure productivity!
       </p>
+      {tasks.map((task, index) => (
+        <div key={index} className="task-item">
+          {task}
+        </div>
+      ))}
     </div>
   )
 }
