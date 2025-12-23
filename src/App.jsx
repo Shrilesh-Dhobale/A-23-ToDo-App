@@ -6,9 +6,9 @@ function App() {
   
 
   return (
-    <>
-      
-    </>
+    <div>
+      <h1 className="app-heading">To-Do Application</h1>
+    </div>
   )
 }
 
