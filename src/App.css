@@ -19,4 +19,15 @@
     font-weight: bold;
     color: #3B4953;
 }
+.task-list{
+    margin-top: 30px;
+    padding:10px;
+    height:60vh;
+    overflow-y:scroll;
 
+}
+.input-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
