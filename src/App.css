@@ -2,9 +2,7 @@
     margin:0;
     padding:0;
     background-color: #90AB8B;
-}
-.home-container{
-    text-align: center;
+    box-sizing: border-box;
 }
 .app-heading{
     text-align:center;

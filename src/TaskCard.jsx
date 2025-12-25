@@ -3,7 +3,7 @@ import './TaskCard.css'
 
 function TaskCard({task}) {
   return (
-    <div>
+    <div className='task-card'>
       {task}
     </div>
   )

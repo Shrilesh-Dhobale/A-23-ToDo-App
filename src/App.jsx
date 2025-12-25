@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import TaskCard from './TaskCard'
 
 import './App.css'
 
@@ -19,10 +20,16 @@ function App() {
         <span className='highlighted-text'>No Stuff</span>, just pure productivity!
       </p>
       {tasks.map((task, index) => (
-        <div key={index} className="task-item">
-          {task}
-        </div>
+        <TaskCard key={index} task={task} />
       ))}
+      <div className="input-section">
+        <input 
+          type="text" 
+          className="task-input" 
+          placeholder="Enter a new task..." 
+        />
+        <button className="add-task-button">Add Task</button>
+      </div>
     </div>
   )
 }
