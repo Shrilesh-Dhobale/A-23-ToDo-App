@@ -1,17 +1,16 @@
-.body{
+body{
     margin:0;
-    padding:0;
     background-color: #90AB8B;
-    box-sizing: border-box;
+
 }
 .app-heading{
-    text-align:center;
+
     color:#3B4953;
     margin-top:20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .app-subheading{
-    text-align:center;
+    
     color:#5A7863;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -20,14 +19,19 @@
     color: #3B4953;
 }
 .task-list{
-    margin-top: 30px;
-    padding:10px;
-    height:60vh;
-    overflow-y:scroll;
+    margin: 30px auto;
+    width: 500px;
+    height: 60vh;
+    overflow-y: auto;
+    display: block;
+    padding-right: 8px;
+    box-sizing: border-box;
 
 }
 .input-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
+    margin: 100px auto 0;
+    background-color:#5A7863 ;
+    padding: 20px 40px;
+    border-radius: 8px;
+    width: 500px;    
+} 
