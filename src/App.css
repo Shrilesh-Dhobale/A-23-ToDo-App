@@ -21,3 +21,10 @@ body{
     text-align: center;
     margin-top: 20px;
 }
+.task-input{
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #313647;
+    border-radius: 5px;
+}
