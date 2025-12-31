@@ -1,4 +1,10 @@
-    
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #A3B087;
+    margin: 0;
+    padding: 0;
+}
 .title{
     font-size: 2em;
     color: #313647;
