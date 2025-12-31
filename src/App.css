@@ -11,3 +11,9 @@ body{
     text-align: center;
     margin-top: 20px;
 }
+.description{
+    font-size: 1.2em;
+    color: #435663;
+    text-align: center;
+    margin-bottom: 20px;
+}
