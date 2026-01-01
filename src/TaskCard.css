@@ -10,3 +10,7 @@
     display: flex;
     justify-content: space-between;
 }
+.icon-delete{
+    color:#3B4953;
+    cursor:pointer;
+}
