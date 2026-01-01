@@ -28,6 +28,12 @@ function App() {
         type="text"
         className="task-input"
         placeholder="Enter a new task"
+        value={newTask}
+        onChange={(e)=>
+        {
+          setNewTask(e.target.value)
+        }
+        }
       />
       <button className="add-button">Add Task</button>
       </div>
