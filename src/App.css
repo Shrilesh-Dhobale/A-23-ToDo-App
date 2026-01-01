@@ -59,7 +59,7 @@ body{
 .task-list{
     padding-bottom:10px;
     height:60vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     width:550px;
     margin-left: 32%;
 }

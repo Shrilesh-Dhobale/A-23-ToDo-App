@@ -6,15 +6,7 @@ import { useState } from 'react'
 
 function App() {
   const [tasks,seTasks]=useState([
-    "Go to swiming",
-    "Gym",
-    "Eating",
-    "Walking",
-    "Studying",
-    "Go to swiming",
-    "Gym",
-    "Eating",
-    "Walking"
+    
   ]);
 
   const [newTask, setNewTask]=useState("");
@@ -35,7 +27,11 @@ function App() {
         }
         }
       />
-      <button className="add-button">Add Task</button>
+      <button className="add-button"
+      onClick={()=>{
+        seTasks([newTask,...tasks]);
+        setNewTask("");
+      }}>Add Task</button>
       </div>
       <div className="task-list">
       {tasks.map((task, index)=>{
