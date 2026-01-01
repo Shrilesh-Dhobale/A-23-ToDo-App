@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import './TaskCard'
 import TaskCard from './TaskCard'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
   ]);
 
   const [newTask, setNewTask]=useState("");
+
+  useEffect(()=>{
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+  },[tasks]);
   
   return (
     <div>
