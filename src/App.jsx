@@ -10,12 +10,19 @@ function App() {
     "Gym",
     "Eating",
     "Walking",
-    "Studying"
+    "Studying",
+    "Go to swiming",
+    "Gym",
+    "Eating",
+    "Walking"
   ]);
+
+  const [newTask, setNewTask]=useState("");
+  
   return (
     <div>
       <h1 className="title">To Do Application</h1>
-      <p className="description">Manage your tasks efficiently</p>
+      <p className="description">Manage your task efficiently with simple To Do App. No fluff, just productivity </p>
       <div className="input-container">
       <input
         type="text"
