@@ -6,22 +6,23 @@ import { useState,useEffect } from 'react'
 
 
 function App() {
-  const [tasks,seTasks]=useState([
-    
-  ]);
+  const [tasks,seTasks]=useState([]);
 
   const [newTask, setNewTask]=useState("");
 
   useEffect(()=>{
-    const savedTasks=JSON.parse(localStorage.getItem("tasks"));
-    if (savedTasks){
+    const savedTasks=localStorage.getItem("tasks");
+    if(savedTasks){
       seTasks(savedTasks);
     }
   },[]);
 
-  useEffect(()=>{
-    localStorage.setItem("tasks",JSON.stringify(tasks));
-  },[tasks]);
+  const saveTaskToLocalStorage=(tasksToSave)=>{
+    localStorage.setItem("tasks",JSON.stringify(tasksToSave));
+  };
+
+  
+  
   
   return (
     <div>
@@ -39,11 +40,7 @@ function App() {
         }
         }
       />
-      <button className="add-button"
-      onClick={()=>{
-        seTasks([newTask,...tasks]);
-        setNewTask("");
-      }}>Add Task</button>
+      <button className="add-button">Add Task</button>
       </div>
       <div className="task-list">
       {tasks.map((task, index)=>{

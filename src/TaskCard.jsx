@@ -6,6 +6,7 @@ function TaskCard({task,tasks,seTasks}) {
   const deleteCurrentTask=()=>{
     const newTasks=tasks.filter((t)=>task!=tasks);
     seTasks(newTasks);
+    
   };
   return (
     <div className='task-card'>
