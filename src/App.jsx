@@ -24,7 +24,11 @@ function App() {
     localStorage.setItem("tasks",JSON.stringify(updatedTasks));
   };
   
-  
+  const deleteTask=(taskToDelete)=>{
+    const updatedTasks=tasks.filter((task)=>task!==taskToDelete);
+    seTasks(updatedTasks);
+    localStorage.setItem("tasks",JSON.stringify(updatedTasks));
+  }
   
   return (
     <div>
