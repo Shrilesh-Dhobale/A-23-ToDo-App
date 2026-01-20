@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import TaskCard from './TaskCard'
 import { useState,useEffect } from 'react'
-
+import NoTask from './assets/notfound.jpg'
 
 function App() {
   const [tasks,setTasks]=useState([]);
@@ -63,6 +63,10 @@ function App() {
         deleteTask={deleteTask}/>
       })}
       </div>
+      {tasks.length===0 && <div className="no-task-container">
+        <img src={NoTask} alt="No Tasks" className="no-task-image"/>
+        
+      </div>}
     </div>
   )
 }
