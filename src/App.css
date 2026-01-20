@@ -63,3 +63,14 @@ body{
     width:550px;
     margin-left: 32%;
 }
+.no-task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -400px;
+}
+.no-task-image{
+    width: 300px;
+    height: auto;
+    opacity: 0.8;
+}
