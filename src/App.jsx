@@ -17,10 +17,12 @@ function App() {
     }
   },[]);
 
-  const saveTaskToLocalStorage=(tasksToSave)=>{
-    localStorage.setItem("tasks",JSON.stringify(tasksToSave));
+  const addTask=()=>{
+    const updatedTasks=[...tasks,newTask];
+    seTasks(updatedTasks);
+    setNewTask("");
+    localStorage.setItem("tasks",JSON.stringify(updatedTasks));
   };
-
   
   
   
@@ -40,7 +42,7 @@ function App() {
         }
         }
       />
-      <button className="add-button">Add Task</button>
+      <button className="add-button" onclick={addTask}>Add Task</button>
       </div>
       <div className="task-list">
       {tasks.map((task, index)=>{
