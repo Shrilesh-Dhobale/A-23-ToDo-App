@@ -17,17 +17,21 @@ function App() {
     }
   },[]);
 
+  const savedTaskToLocalStorage=(tasks)=>{
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+  }
+
   const addTask=()=>{
     const updatedTasks=[...tasks,newTask];
     seTasks(updatedTasks);
     setNewTask("");
-    localStorage.setItem("tasks",JSON.stringify(updatedTasks));
+    savedTaskToLocalStorage(updatedTasks);
   };
   
   const deleteTask=(taskToDelete)=>{
     const updatedTasks=tasks.filter((task)=>task!==taskToDelete);
     seTasks(updatedTasks);
-    localStorage.setItem("tasks",JSON.stringify(updatedTasks));
+    savedTaskToLocalStorage
   }
   
   return (
